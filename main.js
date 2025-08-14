@@ -527,15 +527,4 @@ const prettyPrint = (node, prefix = '', isLeft = true) => {
 	}
 };
 
-const test = new Tree([5, 4, 2, 6, 7, 8, 9, 9, 43, 2]);
-test.insert(41);
-//prettyPrint(test.root);
-
-test.deleteItem(9);
-test.insert(44);
-test.insert(42);
-test.insert(42.5);
-prettyPrint(test.root);
-
-test.rebalance();
-prettyPrint(test.root);
+export { Tree, prettyPrint };
